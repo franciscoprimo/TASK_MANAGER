@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Task Manager</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    
+    <main>
+        <!-- Resumo de Tarefas -->
+        <div class="cards">
+            <div class="card">
+                <h3>Tarefas Pendentes</h3>
+                <p>3 tarefas para hoje</p>
+            </div>
+            <div class="card">
+                <h3>Tarefas Concluídas</h3>
+                <p>12 tarefas concluídas</p>
+            </div>
+            <div class="card">
+                <h3>Progresso do Dia</h3>
+                <p>80% concluído</p>
+            </div>
+        </div>
+        
+    <!-- Menu Flutuante -->
+    <div class="menu">
+        <button class="menu-toggle">☰</button>
+        <ul class="menu-content">
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Adicionar Tarefas</a></li>
+            <li><a href="#">Ativar Modo Foco</a></li>
+            <li><a href="#">Personalizar Mascote</a></li>
+            <li><a href="#">Configurações</a></li>
+        </ul>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer">
+        <p>&copy; 2025 TaskManager. Todos os direitos reservados.</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

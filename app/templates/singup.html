@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar Conta - Task Manager</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Criar Conta no Task Manager</h1>
+    <form action="{{ url_for('task_routes.signup') }}" method="POST" class="form-box">
+      <div class="input-box">
+        <input type="text" name="username" placeholder="Nome de usuário" required>
+      </div>
+      <div class="input-box">
+        <input type="password" name="password" placeholder="Senha" required>
+      </div>
+      <button type="submit" class="button">Cadastrar</button>
+    </form>
+    <p>Já tem uma conta? <a href="{{ url_for('task_routes.login') }}">Entrar</a></p>
+  </div>
+</body>
+</html>

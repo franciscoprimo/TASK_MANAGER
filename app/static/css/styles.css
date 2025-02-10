@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Resetando estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Configuração do fundo e estrutura da página */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #4e5d6c, #5b6d7e);
+  color: #fff;
+}
+
+/* Container principal */
+.container {
+  position: relative;
+  width: 500px;
+  min-height: 500px;
+  background: #2c3e50;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Título principal */
+.container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #c9d6ff;
+}
+
+/* Texto abaixo do título */
+.container p {
+  font-size: 16px;
+  color: #ddd;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+/* Formulário de login/cadastro */
+.form-box {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Campos de entrada */
+.input-box {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #3b4c5e;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-box input::placeholder {
+  color: #bbb;
+}
+
+.input-box input:focus {
+  background: #465a6e;
+}
+
+/* Botão de ação */
+.button {
+  width: 100%;
+  padding: 12px;
+  background: #3498db;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Link para alternar entre login e cadastro */
+.container a {
+  color: #c9d6ff;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+/* Mascote */
+.mascote {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Cards de funcionalidades */
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.card {
+  background: #34495e;
+  color: #fff;
+  width: 30%;
+  min-height: 150px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(10, 10, 10, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
