@@ -2,10 +2,10 @@ import psycopg2
 
 def create_connection():
     conn = psycopg2.connect(
-        dbname="task_manager",
-        user="task_user",
+        dbname="name",
+        user="user",
         password="senha",
-        host="localhost"
+        host="host"
     )
     return conn
 
